@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@400;700&display=swap');
+
+body{
+  font-family:'Poppins', 'Roboto', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.left-form{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F5E866;
+}
+
+.left-form > h1{
+  color: #362641;
+  font-size: 5vw;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.left-form > h2{
+  color: #362641;
+  font-size: 3vw;
+  margin: 0;
+}
+
+
+.right-form{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image{
+  width: 25vw;
+  margin-top: 15px;
+}
+
+.card-login{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.card-login > h1{
+  color: #362641;
+  font-weight: 800;
+  height: 10vh;
+  margin: 0;
+}
+
+.card-login > h3{
+  color: #362641;
+  font-weight: 800;
+  margin: 0;
+  height: 10vh;
+}
+
+.textfield{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  background: #E3E3E3;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label{
+  color: #362641;
+  margin-bottom: 10px;
+}
+
+.btn{
+  width: 50%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: 1px solid #362641;
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 800;
+  background: #F5E866;
+  letter-spacing: 3px;
+  color: #362641;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #dfd24b;
+}
+
+.terms > input{
+  border-color: #dfd24b;
+}
+
+.git-image{
+  width: 4vw;
+  margin-top: 3vw;
+ 
+}
+
+@media only screen and (max-width: 950px){
+  .card-login{
+    width: 85%;
+  }
+}
+
+/*celular em telas menores*/
+@media only screen and (max-width: 500px){
+  .container{
+    flex-direction: column;
+  }
+  .left-form{
+    width: 100%;
+    height: auto;
+  }
+  .right-form{
+    width: 100%;
+    height: auto;
+  }
+  .left-form > h1, h2{
+    display: none;
+  }
+  .login-image{
+    width: 70vw;
+  }
+  .card-login{
+    width: 90%;
+  }
+}
